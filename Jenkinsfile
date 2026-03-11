@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Descargando código desde repositorio GitHub...'
-                git 'https://github.com/jadapache/proyecto-jenkins.git'
+                git branch: 'main', url: 'https://github.com/jadapache/proyecto-jenkins.git'
             }
         }
         stage('Build') {
